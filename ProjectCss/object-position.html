@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-position</title>
+    <style>
+        img {
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+            object-fit: cover;
+            /**object-position: 50px ;**/
+        }
+        p {
+            font-weight: bold;
+        }
+        .exemplo {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            border: 5px solid rgb(240, 49, 198);
+            border-radius: 20px 50px;
+            background-image: url('https://imgs.search.brave.com/orpimfEs_DMEcu0lhdCGCe5vMPmnHCYTv2lt3FI9sLs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZmluZHVwLmNvbS5i/ci93cC1jb250ZW50/L3VwbG9hZHMvMjAy/Mi8wOS9mdXR1cmlz/dGljLXNtYXJ0LWNp/dHktd2l0aC01Zy1n/bG9iYWwtbmV0d29y/ay10ZWNobm9sb2d5/LTEuanBn');
+            
+        }
+        .exemplo2 {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            border: 5px solid rgb(240, 49, 198);
+            border-radius: 20px 50px;
+            background-image: linear-gradient(red, lightpink, purple);
+        }
+        .exemplo3 {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            border: 5px solid rgb(240, 49, 198);
+            border-radius: 20px 50px;
+            background-image: radial-gradient(lightpink, purple)
+        }
+        .exemplo4 {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px 50px;
+            border: 5px solid rgb(240, 49, 198);
+            background-color: #eee;
+            background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+            linear-gradient(-45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+            background-size: 60px 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>object-position</code></h1>
+    <div>
+        <img src="../assets/images/Foto.jpeg" alt="">
+    </div>
+    <p>Exemplo</p>
+    <div class="exemplo">
+        
+    </div>
+    <p>Exemplo 2</p>
+    <div class="exemplo2">
+        
+    </div>
+    <p>Exemplo 3</p>
+    <div class="exemplo3">
+        
+    </div>
+    <p>Exemplo 4</p>
+    <div class="exemplo4">
+        
+    </div>
+</body>
+</html>

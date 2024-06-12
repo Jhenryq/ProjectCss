@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <link rel="shortcut icon" href="/assets/images/design-responsivo.png" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: playfair;
+            src: url(../assets/Fonts/PlayfairDisplay-VariableFont_wght.ttf);
+        }
+        body {
+            font-family: playfair;
+        }
+        .exemplo {
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            border-width: 10px;
+            border-style: dotted dashed solid double;
+            border-color: red yellow green purple;
+            border-radius: 50%;
+        }   
+        .exemplo2 {
+            border-style: inset;
+            border-color: gold;
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            box-shadow: inset 20px 30px 30px -7px red, 20px 30px 30px -7px darkblue ;
+            
+        }  
+        img {
+            width: 200px;
+            margin: 20px auto;
+            object-fit: cover;
+            filter: drop-shadow(10px 10px 5px blue);
+        }
+        p {
+            
+            font-weight: bold;
+            font-size: 20px;
+            /*font-variant: small-caps;*/
+            line-height: 1.5;
+        }
+        caption {
+            font-weight: bold;
+        }
+        tfoot {
+            font-weight: bold;
+        }
+        table {
+            border-color: red;
+            width: 250px;
+            -webkit-box-shadow: 13px 13px 15px 3px rgba(0,0,0,0.8); 
+box-shadow: 13px 13px 15px 3px rgba(0,0,0,0.8);
+        }
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+        table tfoot td {
+            background-color: lightgrey;
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: #f1f1f1;
+        }
+        table tbody tr:hover td {
+            background-color: rgb(172, 160, 160);
+            cursor: pointer;
+            
+        }
+        h1 {
+            background: rgb(240, 164, 164);
+            width: 120px;
+            text-align: center;
+            color: black;
+            border-radius: 10px;
+            padding: 5px;
+            cursor: pointer;
+            
+        }
+        a {
+            text-decoration: none;
+            
+        }
+        h2 {
+            background-color: lavender;
+            padding: 10px;
+            border: black solid 1px;
+            writing-mode: vertical-rl;
+        }
+
+        #h2 {
+            text-indent: 20px;
+            background-color: lavender;
+            padding: 10px;
+            border: black solid 1px;
+            font-family: none;
+            font-size: large;
+            font-weight: normal;
+            width: 300px;
+            text-align: left;
+            text-transform: capitalize;
+            word-spacing: 22px;
+            letter-spacing: 2px;
+            word-break: break-all;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://www.w3schools.com/css/css_border.asp" target="_blank"><h1 title="Leva para o site para aprender bordas">Bordas</h1></a>
+    <h2>Propriedade: <code>text-transform</code></h2>
+    <p id="h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse atque illo maxime quisquam reiciendis nisi iure laudantium dignissimos fugit doloremque reprehenderit iusto unde modi ratione, harum soluta inventore expedita!</p>
+    <div class="exemplo">
+        
+    </div>
+    
+    <div>
+        <p id="italic">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem non magni voluptate itaque dolorum doloribus commodi laudantium officia. Eius earum porro quia recusandae impedit nesciunt enim maxime consectetur architecto! Aperiam?
+        </p>
+    </div>
+    <div title="exemplo2" class="exemplo2">
+    </div>
+    <img src="../assets/images/design-responsivo.png" alt="">
+    <table cellspacing="2" cellpadding="2" border="1">
+        <caption>Tabela de nomes</caption>
+        <thead>
+            <tr>
+                <th colspan=2>Minha tabela</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Wallace</td>
+                <td>37</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
